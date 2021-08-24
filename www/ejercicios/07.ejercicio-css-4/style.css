@@ -1,0 +1,118 @@
+@import 'normalize.css';
+@import 'iconos.css';
+
+body {
+    width: auto;
+    height: auto;
+    background-color: rgba(242, 165, 74, 255);
+}
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    animation: enter 0.5s ease both 1s;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article {
+    max-width: 275px;
+    max-height: 400px;
+    background-color: white;
+}
+.usuario:hover {
+    pointer-events: painted;
+    transform: scale(1.2);
+}
+.usuario1 {
+    animation: entrada 0.75s ease both 1.5s;
+}
+.usuario2 {
+    animation: entrada 0.75s ease both 2s;
+}
+.usuario3 {
+    animation: entrada 0.75s ease both 2.5s;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.info_usuario h2 {
+    padding-top: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+.info_usuario p {
+    color: white;
+    background-color: rgba(112, 0, 255, 255);
+    padding: 20px;
+}
+
+.redes_sociales {
+    list-style: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes_sociales li {
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+@keyframes enter {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(-30px);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(-10px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entrada {
+    0% {
+        transform: translatex(-40px);
+        opacity: 0;
+    }
+    30% {
+        transform: translatex(-25px);
+        opacity: 0.3;
+    }
+    65% {
+        transform: translatex(10-px);
+        opacity: 0.65;
+    }
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,33 @@
+@import 'normalize.css';
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+.obligatorio input {
+    border: 1px solid red;
+}
+
+fieldset {
+    padding: 1rem;
+    background-color: silver;
+}
+
+fieldset:hover {
+    background-color: grey;
+}
+
+.borde_bajo {
+    border-bottom: 5px solid black;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+}

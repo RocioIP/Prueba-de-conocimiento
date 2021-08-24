@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Quinto ejercicio de repaso" />
+        <meta name="author" content="RocioIP" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Ejercicio CSS 2</title>
+    </head>
+
+    <body>
+        <h1>Formulario</h1>
+        <form action="" method="GET">
+            <fieldset class="borde_bajo">
+                <legend>Datos personales</legend>
+                <ul>
+                    <li class="obligatorio">
+                        <label for="name">
+                            Nombre
+                            <input
+                                type="text"
+                                id="name"
+                                autofocus
+                                required
+                                name="nombre"
+                            />
+                        </label>
+                    </li>
+                    <li class="obligatorio">
+                        <label for="email">
+                            Correo
+                            <input
+                                type="email"
+                                id="email"
+                                required
+                                name="correo"
+                            />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="web">
+                            URL
+                            <input
+                                type="url"
+                                id="web"
+                                name="web"
+                                placeholder="Escribe la URL de tu página web personal"
+                            />
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="cumpleaños">
+                            Fecha de nacimiento
+                            <input type="date" id="cumpleaños" name="cumple" />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="hora_nacimiento">
+                            Hora de nacimiento
+                            <input
+                                type="time"
+                                id="hora_nacimiento"
+                                name="hora_cumpleaños"
+                            />
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <ul>
+                    <li>
+                        <label for="number">
+                            Número favorito
+                            <input
+                                type="number"
+                                id="number"
+                                name="numero"
+                                min="-10"
+                                max="10"
+                            />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="color">
+                            Color favorito
+                            <input type="color" id="color" name="color" />
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Fecha de inscripción</legend>
+                <ul>
+                    <li>
+                        <label for="Fecha_hora">
+                            Fecha y hora
+                            <input
+                                type="datetime-local"
+                                id="Fecha_hora"
+                                name="Fecha inscripción"
+                            />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="month">
+                            Mes
+                            <input type="month" id="month" name="mes" />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="week">
+                            Semana
+                            <input type="week" id="week" name="semana" />
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="borde_bajo">
+                <legend>Información</legend>
+                <ul>
+                    <li>
+                        <label for="phone">
+                            Teléfono de contacto
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="telefono"
+                                value="900100900"
+                                readonly
+                            />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="search">
+                            Búsqueda
+                            <input
+                                type="search"
+                                id="search"
+                                name="busqueda"
+                                disabled
+                            />
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <br />
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

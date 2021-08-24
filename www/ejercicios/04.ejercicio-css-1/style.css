@@ -1,0 +1,45 @@
+@import 'normalize.css';
+
+.lista :last-child {
+    background-color: rgb(103, 103, 219);
+}
+
+.lista :nth-child(even) {
+    text-decoration: underline;
+    text-decoration-color: rgb(29, 216, 29);
+}
+
+.lista li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.lista :nth-child(1)::after {
+    content: '🍏';
+}
+.lista :nth-child(2)::after {
+    content: '🍉';
+}
+.lista :nth-child(3)::after {
+    content: '🍋';
+}
+.lista :nth-child(4)::after {
+    content: '🍓';
+}
+.lista :nth-child(5)::after {
+    content: '🍇';
+}
+.lista :nth-child(6)::after {
+    content: '🥑';
+}
+.lista > :lang(en) {
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+#provincias {
+    list-style-type: upper-roman;
+}
+#provincias :nth-child(2) {
+    list-style: none;
+}
